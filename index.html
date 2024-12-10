@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta Charset="UTF-8">
+    <title>La Rana Hyliana</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="shortcut icon" href="imagenes/logo.png"> 
+</head>
+
+<body>
+    <div class="logo">
+    <img src="imagenes/ranaconnombre.png" width="200px"> 
+    </div>
+
+    <div class="menu">
+        <p><span id="saludo"> </span>pequeño Gerudo.</p>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>          <!--Página Principal -->
+            <li><a href="tienda.html">Catálogo</a>
+                <ul class="submenu">
+                <li><a href="mangas.html">Mangas</a></li>
+                <li><a href="clasicos.html">Clásicos</a></li>
+                <li><a href="thriller.html">Thriller</a></li>
+                <li><a href="infantiles.html">Infantiles</a></li>  
+                </ul>
+            </li>  
+            <li><a href="nosotros.html">Nosotros</a></li>     <!--Más info -->
+        </ul>
+    </div>
+
+
+    <!--AQUI EMPIEZA DE VERDAD-->
+    <div class="cuerpo">
+        <h3>DESTACADOS DE <span id="mes"></span></h3>
+        <h3 id="descuento"></h3>
+        <table>
+            <tr>
+                <td>
+                    <img src="imagenes/oyasumi.jpg">
+                </td>
+                <td>
+                    <p class="tituloLibro">Oyasumi PunPun - Tomo 1</p>
+                    <p>Punpun no es el típico estudiante de primaria. Pese a que siente los mismos impulsos que sus compañeros, empieza a descubrir a las chicas y el sexo, la situación familiar no es la más estable y deberá enfrentarse a ello como buenamente pueda… y en principio, eso es visualizándose como un ave amorfa en un entorno extraño.</p>
+                    <p>Precio: 8.00€</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <img src="imagenes/cuco-javiercastillo.jpg">
+                </td>
+                <td>
+                    <p class="tituloLibro">El cuco de cristal</p>
+                    <p>Nueva York, 2017. Cora Merlo, médico residente de primer año, sufre un infarto fulminante que la obliga a un trasplante de corazón. Aún convaleciente la joven recibe la visita de una extraña mujer con una enigmática oferta: pasar unos días en Steelville, un pequeño pueblo de interior, para conocer la vida de su hijo Charles, el donante de su corazón.</p>
+                    <p>Precio: 19.90€</p>
+                </td>
+              </tr>
+        </table>
+    </div>
+
+    <div class="cuerpo">
+        <h3>CLUB DE LA <rick><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">R</a></rick>UPIA</h3>
+        <p>Cada mes, te ofrecemos un clásico literario para que agreges a tu lista de lecturas. Al final del mes, se celebrará en nuestra librería una reunión de lectores para comentarlo.
+        ¿Te animas a probarlo?</p>
+        <p>Lectura del mes: <button id="Desaparece" onClick="PonerLibro()">Descúbrela!!</button><span id="LibroDelMes"></span></p>
+        <p id="DescripcionDelMes"></p>
+        <hr>
+        <div class="buzon">
+        <p>¿Tienes alguna sugerencia o recomendación? Puedes dejar estas en nuestro buzón y nuestro cartero nos la hará llegar <3</p>
+        <a href="solicitud.html">
+        <img src="imagenes/buzon.webp" alt="Buzón de sugerencias">
+        </a>
+        </div>
+    </div>
+
+    <div class="cuerpo-frase">
+        <h3>FRASE DEL DÍA</h3>
+        <p id="frase"></p>
+        <button onClick="FraseRandom()">Genera tu frase</button>
+    </div>
+
+    <!--Final página-->
+    <div class="abajo">
+        <p>&copy; <span id="actual-year"></span> La Rana Hyliana. 
+        <a href=""><img src="imagenes/instagram.svg"></a>
+        <a href="https://www.youtube.com/watch?v=wT0EXirvFIo"><img src="imagenes/youtube.png"></a>
+        </p>
+    </div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

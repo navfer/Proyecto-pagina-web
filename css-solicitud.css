@@ -1,0 +1,79 @@
+body{
+    color:black;
+    font-family:Georgia,serif;
+    font-size: medium;
+    background: url('imagenes/fondo-carta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    font-size: small;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+input{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-color: black;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 5px;
+}
+
+textarea{
+    border-color: black;
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+}
+
+div{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+
+
+button{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: transparent;
+    border-color: transparent;
+    border-style:outset;
+    width: 100%;
+    font-style: italic;
+    font-weight: bold;
+    /*text-align: center;*/
+    
+}
+
+button img{
+    width: 80px;
+    align-self: center;
+}
+
+
+.abajo{
+    color:black;
+    font-size:xx-small;
+    text-align: right;
+}
+
+p .peque{
+    font-size:xx-small;
+}
+
+
+a img{
+    width: 80px;
+}
+

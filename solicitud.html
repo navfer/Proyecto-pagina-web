@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta Charset="UTF-8">
+    <title>La Rana Hyliana</title>
+    <link rel="stylesheet" type="text/css" href="css-solicitud.css">
+    <link rel="shortcut icon" href="imagenes/logo.png"> 
+</head>
+<body>
+    <div class="div-formulario">
+        <img src="imagenes/trifuerza.png">
+        <form onsubmit="return validarFormulario()">
+            <p>Nombre*:
+                <input type="text" id="nombre" required>
+            </p>
+    
+            <p>DNI*:
+                <input type="text" id="dni" required>
+            </p>
+    
+            <p>Correo Electrónico*:
+                <input type="email" id="correo" required>
+            </p>
+    
+            <p>Comentario*:</p>
+            <textarea id="comentario"></textarea><br>
+    
+            <p>Calificación (0-5):
+                <input type="number" id="calificacion" min="0" max="5">
+            </p>
+            <br><br><br>
+
+            
+            <p>CAPTCHA REQUERIDO </p>
+            <p>Para poder enviar el formulario, escriba 40 en letra:
+            <input type="text" id="captcha" required>
+            </p>
+            <button type="submit"><img src="imagenes/carta.webp" /></button>
+            <p>Pulsa en el sobre para enviar tu formulario</p>
+        </form>
+    </div>
+    
+    <div>
+        <p class="peque">Volver al inicio: 
+        <a href="index.html"><img src="imagenes/logo.png"></a></p>
+        
+    </div>
+
+<br><br><br>
+
+<p class="abajo">&copy; <span id="actual-year"></span> La Rana Hyliana. </p>
+<script type="text/javascript" src="script-solicitud.js"></script>
+</body>
+</html>
